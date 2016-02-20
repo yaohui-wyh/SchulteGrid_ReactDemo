@@ -1,3 +1,5 @@
 .idea/
 dist/
+tmp/
 node_modules/
+mochawesome-reports/

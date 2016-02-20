@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-left: -70px;
+}
+
+.control-panel {
+    margin-bottom: 20px;
+}
+
+.control-panel > p {
+    display: inline-block;
+}
+
+.scores-container {
+    display: inline-block;
+    margin-right: 20px;
+    color: #888;
+}
+
+.current-time, .current-stage {
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px #888888;
+    display: inline-block;
+    padding: 2px 6px;
+    margin-right: 10px;
+}
+
+.scores-title {
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.scores-value {
+    font-size: 0.5em;
+    text-decoration: underline;
+}
+
+.scores-value-finish {
+    font-size: 0.5em;
+    text-decoration: underline;
+    background: #fd6600;
+    color: #fff;
+}
+
+.guide-text {
+    margin-bottom: 20px;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.button {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 4px;
+    cursor: pointer;
+    color: #000;
+}
+
+.button-continue {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 4px;
+    cursor: pointer;
+    color: #fff;
+    background: #fd6600;
+}
+
+.board {
+    margin-bottom: 30px;
+}
+
+.cell {
+    transition: background 0.3s ease-out;
+    color: #555;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid black;
+}
+
+.selection-enter {
+    opacity: 0.01;
+}
+
+.selection-enter.selection-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.selection-leave {
+    opacity: 1;
+}
+
+.selection-leave.selection-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.correct-bg {
+    transition: background 0.3s ease-out;
+    background: #0078ff;
+    color: #fff;
+}
+
+.wrong-bg {
+    transition: background 0.3s ease-out;
+    background: #ab0505;
+    color: #fff;
+}
+
+hr {
+    max-width: 500px;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-text {
+    color: #555;
+    font-size: 0.8em;
+}

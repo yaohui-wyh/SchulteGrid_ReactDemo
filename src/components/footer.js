@@ -7,8 +7,8 @@ var footer = React.createClass({
             <div className="footer">
                 <hr/>
                 <p>
-                    <span className="footer-text">Created by Wang Yaohui,
-                        written using <a href="https://facebook.github.io/react" target="_blank">React</a>
+                    <span className="footer-text"><b>EyeMon </b>2016, Created by <a href="https://github.com/alex-yh99" target="_blank">Wang Yaohui</a>,
+                        written in <a href="https://facebook.github.io/react" target="_blank">React</a>
                     </span>
                 </p>
             </div>
