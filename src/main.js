@@ -2,9 +2,9 @@ var ReactDOM = require('react-dom'),
     React = require('react'),
     Container = require('./components/container');
 
-window.requestAnimationFrame(function() {
+window.requestAnimationFrame(function () {
     ReactDOM.render(
-        <Container />,
+        <Container size="4"/>,
         document.getElementById('attach-point')
     )
 });

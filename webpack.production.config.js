@@ -1,7 +1,7 @@
-var path = require('path');
+var webpack = require('webpack'),
+    path = require('path');
 
 module.exports = {
-    devtool: 'eval',
     entry: ['./src/main.js'],
     resolve: {extensions: ['', '.js', '.jsx']},
     output: {
@@ -17,5 +17,12 @@ module.exports = {
                 query: {presets: ['react']}
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': '"production"'
+            }
+        })
+    ]
 };

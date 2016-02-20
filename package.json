@@ -1,20 +1,27 @@
 {
   "name": "schulte_demo",
   "version": "1.0.0",
-  "description": "ReactJs Demo for SchultGrid",
+  "description": "React JavaScript Demo for Schulte Grid",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "author": "Wang Yaohui <wangyaohuicn@gmail.com>",
   "dependencies": {
+    "babel-preset-react": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "babel-preset-react": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "webpack": "latest",
+    "webpack-dev-server": "latest",
     "babel-core": "latest",
-    "babel-loader": "latest"
+    "babel-loader": "latest",
+    "mocha": "latest",
+    "mochawesome": "latest"
+  },
+  "scripts": {
+    "dev": "webpack --progress -p",
+    "deploy": "webpack --progress -p --config webpack.production.config.js"
   }
 }
