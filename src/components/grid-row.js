@@ -3,24 +3,20 @@ var React = require('react'),
 
 var GridRow = React.createClass({
 
-    setContent: function () {
-        var content = [];
-        var that = this;
-        this.props.dataValues.forEach(function (item, idx) {
-            var props = {
-                grid: that.props.grid,
-                dataValue: item,
-                index: that.props.grid.size * that.props.rowIndex + idx,
-                key: 'cellIndex' + idx
-            };
-            content.push(<Cell {...props}/>);
-        });
-        return content;
-    },
-
     render: function () {
+        var that = this;
         return (
-            <div className="grid-row">{this.setContent()}</div>
+            <div className="grid-row">
+                {this.props.dataValues.map(function (item, idx) {
+                    var props = {
+                        grid: that.props.grid,
+                        dataValue: item,
+                        index: that.props.grid.size * that.props.rowIndex + idx,
+                        key: 'cellIndex' + idx
+                    };
+                    return (<Cell {...props}/>);
+                })}
+            </div>
         )
     }
 });

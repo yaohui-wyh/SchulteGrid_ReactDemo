@@ -21,7 +21,7 @@
     "mochawesome": "latest"
   },
   "scripts": {
-    "dev": "webpack --progress -p",
-    "deploy": "webpack --progress -p --config webpack.production.config.js"
+    "dev": "webpack-dev-server --progress -p --colors",
+    "deploy": "webpack --progress -p --colors --config webpack.production.config.js"
   }
 }

@@ -10,7 +10,6 @@ var CtrlPanel = React.createClass({
             activeScoreClass: 'scores-value',
             activeButtonClass: 'button',
             buttonText: 'Restart'
-
         }
     },
 
