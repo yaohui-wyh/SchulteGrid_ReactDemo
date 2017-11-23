@@ -22,13 +22,6 @@ App will be launched at: <http://localhost:8080/webpack-dev-server/index.html>
 
 > **[Webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)** will watch for file changes and automatically updates the browser page.
 
-## Test
-
-```
-npm install mocha -g
-mocha --recursive --reporter mochawesome
-```
-
 [Test Report](http://alex-yh99.github.io/SchulteGrid_ReactDemo/mochawesome-reports/mochawesome.html) will be generated at `mochawesome-reports/mochawesome.html`
 
 ## 项目介绍

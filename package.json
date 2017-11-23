@@ -8,20 +8,24 @@
   },
   "author": "Wang Yaohui <wangyaohuicn@gmail.com>",
   "dependencies": {
-    "babel-preset-react": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
   },
   "devDependencies": {
-    "webpack": "latest",
-    "webpack-dev-server": "latest",
-    "babel-core": "latest",
-    "babel-loader": "latest",
-    "mocha": "latest",
-    "mochawesome": "latest"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "latest",
+    "babel-preset-react": "^6.24.1",
+    "mocha": "^4.0.1",
+    "mochawesome": "^2.3.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   },
   "scripts": {
     "dev": "webpack-dev-server --progress -p --colors",
-    "deploy": "webpack --progress -p --colors --config webpack.production.config.js"
+    "deploy": "webpack --progress -p --colors --config webpack.production.config.js",
+    "test": "mocha --compilers js:babel-core/register test/ --reporter mochawesome"
   }
 }

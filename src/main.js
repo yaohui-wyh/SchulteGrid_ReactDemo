@@ -1,10 +1,7 @@
-var ReactDOM = require('react-dom'),
-    React = require('react'),
-    Container = require('./components/container');
+import ReactDOM from 'react-dom';
+import React from 'react';
+import Container from './components/Container';
 
-window.requestAnimationFrame(function () {
-    ReactDOM.render(
-        <Container size="4"/>,
-        document.getElementById('attach-point')
-    )
+window.requestAnimationFrame(() => {
+  ReactDOM.render(<Container size={4}/>, document.getElementById('attach-point'));
 });
