@@ -2,6 +2,8 @@
 
 Live Demo: <http://alex-yh99.github.io/SchulteGrid_ReactDemo/>
 
+<img src="https://raw.githubusercontent.com/alex-yh99/SchulteGrid_ReactDemo/master/docs/demo.gif" width="50%">
+
 #### About [SchulteGrid](https://en.wikipedia.org/wiki/Schulte_table):
 
 > A Schulte table is a grid with randomly distributed numbers or letters used for development of speed reading, peripheral vision, attention and visual perception (wikipedia)
@@ -15,10 +17,18 @@ Live Demo: <http://alex-yh99.github.io/SchulteGrid_ReactDemo/>
 ```
 npm install webpack -g
 npm install
+
+# Test
+npm run test
+
+# Dev
 npm run dev
+
+# Deploy
+npm run deploy
 ```
 
-App will be launched at: <http://localhost:8080/webpack-dev-server/index.html>
+App will be launched at: <http://localhost:8080/webpack-dev-server/index-dev.html>
 
 > **[Webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)** will watch for file changes and automatically updates the browser page.
 

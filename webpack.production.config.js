@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['./src/main.js'],
@@ -23,6 +24,10 @@ module.exports = {
       'process.env': {
         'NODE_ENV': '"production"'
       }
-    })
+    }),
+    new CopyWebpackPlugin([
+      {from: 'src/style/main.css', to: 'main.css'},
+      {from: 'index.html', to: 'index.html'},
+    ])
   ]
 };
